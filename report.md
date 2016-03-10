@@ -29,17 +29,19 @@ Put here your picture file (tree.jpg)
 
 ![tree.jpg](tree.jpg) 
 
+How many non zero element in $\Sigma$?
+
+There are 800 non zero elements in red matrix, 800 non zero elements in green matrix, and 800 non zero elements inblue matrix. 
+
+Put here your lower and better resolution pictures. Explain how you generate
+these pictures from `task2.py`.
+
 high resolution
 ![uppertree.png](uppertree.png)
 
 low resolution
 ![lowertree.png](lowertree.png)
 
-
-How many non zero element in $\Sigma$?
-
-Put here your lower and better resolution pictures. Explain how you generate
-these pictures from `task2.py`.
 
 What is a sparse matrix?
 
