@@ -27,8 +27,12 @@ Sparse matrix is a matrix which the most elements are zero. If the matrix is mos
 
 Put here your picture file (tree.jpg)
 
-![tree.jpg](tree.jpg)
+![tree.jpg](tree.jpg) 
+
+high resolution
 ![uppertree.png](uppertree.png)
+
+low resolution
 ![lowertree.png](lowertree.png)
 
 
