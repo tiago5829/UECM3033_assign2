@@ -42,9 +42,12 @@ high resolution
 low resolution
 ![lowertree.png](lowertree.png)
 
+First of all, we create a self-defined function svd(). Then, seperate it into 3 different matrix, red(r)r, green(g) and blue(b). Then, we calculate the nonzero element inside each matrix. )After that,  keep the first n nonzero element in each matrix and set the rest of the entries to zero. Each of the r,g and b is a 3 dimension matrix. The original of each matrix is (800,1) and we need to convert it to (800,1000) in order to do dot multiplication for new matrix,so the new matrix of dimension of (800,1000). Then, we plot 4 picture which the first picture was the original picture and the each other picture was poltted by only red or blue or green. Finally, we set the degree of resolution we want and sub into funcyion svd().
+
 
 What is a sparse matrix?
 
+A sparse matrix is a matrix in which most of the elements are zero. By contrast, if most of the elements are nonzero, then the matrix is considered dense. Sparse matrices also have significant advantages in terms of computational efficiency such as reduction in required storage space. For example, we make use of sparse matrix in task 2 in order to make the lower resolution picture.
 
 -----------------------------------
 
