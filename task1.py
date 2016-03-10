@@ -31,11 +31,10 @@ def sor(A, b):
         for j in range(len(b)):
             sums = np.dot( A[j,:], x )
             x[j] = x[j] + omega*(b[j]-sums)/A[j,j]
-    # Edit here to implement your code
-    return list(sol)
+            return list(sol)
 
 def solve(A, b):
-    condition = np.count_nonzero(A) > 1/2 *len(A)  # State and implement your condition here
+    condition = np.count_nonzero(A) > 1/2 *len(A)  # to determine whether is spare matrix or not 
     if condition:
         print('Solve by lu(A,b)')
         return lu(A,b)
