@@ -18,9 +18,9 @@ The condition is set to be np.count_nonzero(A) > 1/2*len(A). If the none zero el
 
 Explain how you implement your `task1.py` here.
 
-Fisrt of all, we make a self-defined funtion lu. It is for solving the LU. Then, we make another self-defined duntion sor. We set a iteration limit as 10 and initiate omega as 1.03.
+Fisrt of all, we make a self-defined funtion lu. It is for solving the LU. Then, we make another self-defined duntion sor. We set a iteration limit as 10 and initiate omega as 1.03. The length of A is use len.
 
-Sparse matrix is a matrix which the most elements are zero. If the matrix is most consist of
+Sparse matrix is a matrix which the most elements are zero. If the matrix is most consist of most zero matrix, it is more accurate that use SOR to solve it. We use np.array to make the A and b to be a matrix, and use astype float to convert it to float. Then, used np.linalg.solve(A,b) and solve(A,b) to check with the condition. Use print() to display the answer. 
 ---------------------------------------------------------
 
 ## Task 2 -- SVD method and image compression
