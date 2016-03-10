@@ -1,15 +1,34 @@
 import numpy as np
 #Your optional code here
 #You can import some modules or create additional functions
+def LUdecomp(A): 
+    n=len(A) 
+      for k in range(0, n-1): 
+         for i in range(k+1, n): 
+          if A[i,k]!= 0.0: 
+          lam = A[i,k] / A[k,k] 
+          A[i, k+1:n] = A[i, k+1:n] - lam * A[k, k+1:n] 
+          A[i, k] = lam 
+return A
 
-def lu(A, b):
-    sol = []
-    # Edit here to implement your code
-    return list(sol)
+def lu(A,b): 
+ A=LUdecomp(A) 
+ n = len(A) 
+   for k in range(1,n): 
+        b[k] = b[k] - np.dot(A[k,0:k], b[0:k]) 
+        b[n-1]=b[n-1]/A[n-1, n-1] 
+   for k in range(n-2, -1, -1): 
+       b[k] = (b[k] - np.dot(A[k,k+1:n], b[k+1:n]))/A[k,k] 
+ return b 
 
 def sor(A, b):
     sol = []
-    # Edit here to implement your code
+    omega = 1.03 
+     x = np.zeros_like(b) 
+     for itr in range(ITERATION_LIMIT): 
+         for j in range(len(b)): 
+         sums = np.dot( A[j,:], x ) 
+         x[j] = x[j] + omega*(b[j]-sums)/A[j,j]
     return list(sol)
 
 def solve(A, b):
