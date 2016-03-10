@@ -13,6 +13,7 @@ The reports, codes and supporting documents are to be uploaded to Github at:
 [https://github.com/your_github_id/UECM3033_assign1](https://github.com/your_github_id/UECM3033_assign1)
 
 Explain your selection criteria here.
+
 The condition is set to be np.count_nonzero(A) > 1/2*len(A). If the none zero elements in matrix A is greater than half of the length of matrix A, it will perform LU factorization, else it will perform SOR method. 
 
 Explain how you implement your `task1.py` here.
