@@ -25,9 +25,9 @@ Sparse matrix is a matrix which the most elements are zero. If the matrix is mos
 
 ## Task 2 -- SVD method and image compression
 
-Put here your picture file (Lenna.png)
+Put here your picture file (tree.jpg)
 
-![tree.png](tree.png)
+![tree.jpg](tree.jpg)
 
 How many non zero element in $\Sigma$?
 
